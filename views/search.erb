@@ -9,7 +9,8 @@
   <% if @results.empty? %>
     <p>Sorry, no matches were found.</p>
   <% else %>
-    <h2 class="content-subhead">Results for '<%= @term %>'</h2>
+    <h2 class="content-subhead">Results found for '<%= @term %>'</h2>
+    <h3 class="content-subhead">Total: <%= @results.size %></h3>
     
     <% @results.each do |result| %>
       <ul>
